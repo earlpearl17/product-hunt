@@ -13,6 +13,7 @@
   <!-- <link href="/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
   <!-- Bootstrap CDN -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="{% static 'open-iconic/font/css/open-iconic-bootstrap.css' %}" rel="stylesheet">
 
 
 </head>
@@ -31,7 +32,9 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto">
             {% if user.is_authenticated %}
-              <a class="nav-item nav-link" href="" disabled>Welcome <strong>{{ user.username }}</strong></a>&nbsp;&nbsp; 
+              <a class="nav-item nav-link" href="" disabled>Welcome <strong>{{ user.username }}</strong></a>&nbsp;&nbsp;
+              <a class="nav-item nav-link" href="{% url 'create' %}"><span class="oi oi-plus"></span></a>
+              <!-- <a class="nav-item nav-link" href="{% url 'create' %}">Create</a> -->
               <!-- <p class="nav-item">Welcome <strong>{{ user.username }}</strong></p>&nbsp;&nbsp; -->
               <!-- <p class="nav-item nav-link disabled">Welcome <strong>{{ user.username }}</strong></p>&nbsp;&nbsp; -->
               <!-- <p class="nav-item">Welcome <strong>{{ user.username }}</strong></p>&nbsp;&nbsp; -->
