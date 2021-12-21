@@ -1,0 +1,3 @@
+﻿* linguist-vendored
+producthunt/* linguist-vendored
+*.py linguist-vendored=false
