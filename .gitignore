@@ -9,3 +9,6 @@ __pycache__/
 local_settings.py
 db.sqlite3
 /static
+ph_db.json
+ph_venv/
+
